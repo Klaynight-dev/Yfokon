@@ -4,8 +4,8 @@
   "version": "0.9.4",
   "identifier": "fr.breezeapps.yfokon",
   "build": {
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "bun dev",
+    "beforeBuildCommand": "bun build",
     "devUrl": "http://localhost:5173",
     "frontendDist": "../dist"
   },
