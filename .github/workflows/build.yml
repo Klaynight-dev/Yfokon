@@ -40,10 +40,13 @@ jobs:
         with:
           node-version: lts/*
 
-      - uses: pnpm/action-setup@v4
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: install frontend dependencies
-        run: pnpm install
+        run: bun install
 
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable

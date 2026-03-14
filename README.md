@@ -25,28 +25,28 @@ git clone https://github.com/BreezeApps/Yfokon.git
 # Aller dans le répertoire du projet
 cd Yfokon
 # Installer les dépendances
-pnpm install
+bun install
 ```
 
 ### Démarrer en mode développement
 ```bash
 # Lancer l'application en mode développement
-pnpm tauri dev
+bun tauri dev
 # Pour Mobile
-pnpm tauri android dev
+bun tauri android dev
 # OU
-pnpm tauri ios dev
+bun tauri ios dev
 ```
 
 ### Créer des builds de développement
 Pour générer des builds de l'application pour différentes plateformes en local :
 ```bash
 # Build pour votre Système :
-pnpm tauri build
+bun tauri build
 # Build pour mobile :
-pnpm tauri android build
+bun tauri android build
 # OU
-pnpm tauri ios build
+bun tauri ios build
 ```
 
 Les builds seront créés dans le dossier `src-tauri/target/release/bundle`.
